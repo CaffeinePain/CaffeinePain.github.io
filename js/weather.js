@@ -1,6 +1,7 @@
 const API_KEY = "52be1478b78382d7e99bab7d2d81eca7";
 const USER_LAT_KEY = "user_lat";
 const USER_LON_KEY = "user_lon";
+const weatherResetBtn = document.getElementById("weather-reset");
 
 function onGeoOk(position) {
     getUserGeo(position);
@@ -30,6 +31,12 @@ function onGeoError() {
     alert("날씨 api가 당신의 위치를 찾을 수 없습니다. 혹시 gps가 꺼져있다면 켠 후 새로고침 해주세요.");
 }
 
+function WeatherReset() {
+    localStorage.removeItem(USER_LAT_KEY);
+    localStorage.removeItem(USER_LON_KEY);
+    navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+}
+
 const userPosition = [localStorage.getItem(USER_LAT_KEY), localStorage.getItem(USER_LON_KEY)];
 
 if(userPosition[0] === null || userPosition[1] === null) {
@@ -37,3 +44,4 @@ if(userPosition[0] === null || userPosition[1] === null) {
 } else {
     displayWeather(userPosition[0],userPosition[1]);
 }
+weatherResetBtn.addEventListener("click", WeatherReset);

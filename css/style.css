@@ -141,6 +141,13 @@ video {
   top: 2%;
   left: 2%;
 }
+#weather-reset {
+  position: absolute;
+  top: 7%;
+  left: 0%;
+
+  font-size: larger;
+}
 #greeting {
   position: absolute;
   top: 35%;
