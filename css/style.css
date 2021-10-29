@@ -116,7 +116,7 @@ video {
   background-color: white;
 }
 #google-search table tr td input[type="text"] {
-  width: 62.5%;
+  width: 72.5%;
   height: 100%;
   position: absolute;
   top: 0%;
@@ -125,7 +125,7 @@ video {
   border: none;
 }
 #google-search table tr td input[type="submit"] {
-  width: 20%;
+  width: 10%;
   height: 100%;
   position: absolute;
   top: 0%;
