@@ -252,7 +252,7 @@ video {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 3px solid white;
+  border-bottom: 4px solid white;
   background-color: rgba(0, 0, 0, 0.3);
   font-family: "Do Hyeon", sans-serif;
   font-size: 1.5em;
@@ -267,9 +267,9 @@ video {
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
   list-style: none;
-  border-bottom: 3px solid white;
-  border-left: 3px solid white;
-  border-right: 3px solid white;
+  border-bottom: 4px solid white;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
   align-items: right;
 }
 #todo-list li span {
@@ -280,7 +280,13 @@ video {
 #todo-list li button {
   background: none;
   position: absolute;
-  right: 5%;
+  right: 0%;
+  border-left: 4px solid white;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  height: 45%;
+  box-sizing: border-box;
 }
 #bookmark-background {
   width: 50%;
