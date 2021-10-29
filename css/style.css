@@ -116,7 +116,7 @@ video {
   background-color: white;
 }
 #google-search table tr td input[type="text"] {
-  width: 60%;
+  width: 62.5%;
   height: 100%;
   position: absolute;
   top: 0%;
@@ -125,10 +125,11 @@ video {
   border: none;
 }
 #google-search table tr td input[type="submit"] {
+  width: 20%;
   height: 100%;
   position: absolute;
   top: 0%;
-  left: 72.5%;
+  right: 5%;
   border: none;
 }
 #quote {
@@ -136,7 +137,7 @@ video {
   height: 12%;
   position: absolute;
   top: 85%;
-  left: 77.5%;
+  left: 50%;
   transform: translateX(-50%);
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
