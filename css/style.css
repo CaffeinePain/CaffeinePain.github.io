@@ -94,43 +94,29 @@ video {
   display: none;
 }
 
-#google-search {
-  width: 40%;
-  height: 5%;
+#search {
   position: absolute;
   left: 50%;
+  height: 10%;
   transform: translateX(-50%);
-  top: 5%;
+  background-color: rgba(0, 0, 0, 0);
 }
-#google-picture {
-  width: 7.5%;
+#search-text {
   height: 100%;
-  position: absolute;
-  left: 5%;
-  z-index: 1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: black 1pt solid;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0%;
 }
-#google-search table {
-  width: 100%;
-  height: 100%;
-  border-radius: 5% / 50%;
-  background-color: white;
-}
-#google-search table tr td input[type="text"] {
-  width: 72.5%;
-  height: 100%;
-  position: absolute;
-  top: 0%;
-  left: 12.5%;
-  box-sizing: border-box;
+#search-btn {
+  width: 15%;
+  background-color: black;
+  color: white;
   border: none;
-}
-#google-search table tr td input[type="submit"] {
-  width: 10%;
-  height: 100%;
-  position: absolute;
-  top: 0%;
-  right: 5%;
-  border: none;
+  font-family: "do Hyeon", sans-serif;
+  margin: 0%;
 }
 #quote {
   width: 50%;
